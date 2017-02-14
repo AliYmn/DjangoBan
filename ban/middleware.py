@@ -1,5 +1,4 @@
 from .models import UsersBan
-from django.conf import settings
 from django.shortcuts import render
 
 
@@ -13,6 +12,6 @@ class BanManagement():
         response = self.get_response(request)
 
         if(UsersBan.objects.all().filter(ban=True,user_id=request.user.id)):
-            return render(request,'ban.html',locals())
+            return render(request,'ban.html')
         else:
             return response
