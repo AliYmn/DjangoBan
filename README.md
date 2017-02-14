@@ -14,7 +14,7 @@ Django User Ban Management
 * Example settings.py : Load the application.
         
           #settings.py
-            "
+          
           INSTALLED_APPS = [
            ...
            
