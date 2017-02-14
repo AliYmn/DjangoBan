@@ -4,8 +4,8 @@ from django.conf import settings
 
 
 ban_message = getattr(settings, "BAN_MESSAGE", "You were banned by administrator.")
-permanent_ban_message = getattr(settings, "PERMANENT_BAN_MESSAGE", "You were ynlimited ban by administrator.")
-description = getattr(settings, "Description", "Reason: Rule violation.")
+permanent_ban_message = getattr(settings, "PERMANENT_BAN_MESSAGE", "You were unlimited ban by administrator.")
+BAN_DESCRIPTION = getattr(settings, "BAN_DESCRIPTION", "Reason: Rule violation.")
 
 message = """
 <html>
@@ -40,7 +40,7 @@ class BanManagement():
                                          user__http_x=str(request.META.get('HTTP_X_FORWARDED_FOR')),
                                          user__http_user=str(request.META['HTTP_USER_AGENT']))):
 
-            return HttpResponse(message.format(ban_message,description))
+            return HttpResponse(message.format(permanent_ban_message,BAN_DESCRIPTION))
 
         else:
 
@@ -50,12 +50,12 @@ class BanManagement():
                                              user__http_x=str(request.META.get('HTTP_X_FORWARDED_FOR')),
                                              user__http_user=str(request.META['HTTP_USER_AGENT']))):
 
-                return HttpResponse(message.format(permanent_ban_message, description))
+                return HttpResponse(message.format(permanent_ban_message, BAN_DESCRIPTION))
 
             else:
 
                 if(UsersBan.objects.all().filter(ban=True,user__user=str(request.user))):
-                    return HttpResponse(message.format(permanent_ban_message, description))
+                    return HttpResponse(message.format(ban_message, BAN_DESCRIPTION))
 
                 else:
 
