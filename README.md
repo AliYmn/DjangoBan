@@ -12,13 +12,15 @@ Django User Ban Management
 # Configuration
 
 * Example settings.py : Load the application.
-
-      INSTALLED_APPS = [
-       ...
-       
-       'ban',
-       
-       ]
+        
+          #settings.py
+            
+          INSTALLED_APPS = [
+           ...
+           
+           'ban',
+           
+           ]
        
 * Example MIDDLEWARE_CLASESS
 
