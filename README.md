@@ -36,8 +36,8 @@ Django User Ban Management
 
 * Database Operations
 
-      python manage.py makemigrations
-      python manage.py migrate
+          python manage.py makemigrations
+          python manage.py migrate
 
 
 # Demo
