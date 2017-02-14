@@ -40,24 +40,10 @@ Django User Ban Management
       python manage.py migrate
 
 
-# Settings.py Configuration
-
-If you want to change the information;
-
-* BAN_MESSAGE : Ban(True) message
-* PERMANENT_BAN_MESSAGE : Permanent(True) Message
-* BAN_DESCRIPTION : General description
+# Demo
 
 <img src="http://image.prntscr.com/image/ab5fbfb89d7a4ffb9f51f37818ebeea6.png"/>
-----------------
 
-Example ;
-
-    #settings.py
-    ban_message = "You were banned by administrator."
-    permanent_ban_message = "You were unlimited ban by administrator."
-    BAN_DESCRIPTION = "Reason: Rule violation."
-           
 
 # How to use?
 
@@ -65,8 +51,10 @@ Example ;
 --------
 --------
 
-<img src="http://image.prntscr.com/image/ef3b4a29bc9148b9bd1cf46457891f1f.png"/>
+<img src="http://image.prntscr.com/image/22d7d44c180f4daeaf20f1b6c31fd598.png"/>
 
+# Template Customization
 
-* Ban : Bans the user.
-* Permanent Ban : Browser Banners.
+* Created template : **ban.html**
+
+* Templates included in your application You can create and customize the file named "**ban.html**".
