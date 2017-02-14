@@ -55,6 +55,6 @@ Django User Ban Management
 
 # Template Customization
 
-* Created template : **ban.html**
+* Ban template : **ban.html**
 
 * Templates included in your application You can create and customize the file named "**ban.html**".
