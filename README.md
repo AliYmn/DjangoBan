@@ -42,7 +42,7 @@ Django User Ban Management
 
 # Demo
 
-<img src="http://image.prntscr.com/image/ab5fbfb89d7a4ffb9f51f37818ebeea6.png"/>
+<img src="http://image.prntscr.com/image/b5091af280374c70a525b2fa544ff912.png"/>
 
 
 # How to use?
