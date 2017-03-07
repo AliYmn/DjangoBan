@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='DjangoBan',
-    version='1.8.0',
+    version='1.9.0',
     packages=['ban', 'ban.migrations'],
     url='https://github.com/AliYmn/DjangoBan',
     license='MIT',
