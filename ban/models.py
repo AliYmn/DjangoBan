@@ -1,10 +1,12 @@
 from django.db import models
 from django.conf import settings
 
+
 class UsersBan(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL,
                              verbose_name="User name",
-                             help_text="Choose Username")
+                             help_text="Choose Username"
+                             on_delete=models.SET_NULL)
 
     ban = models.BooleanField(default=False,
                               verbose_name="Ban",
