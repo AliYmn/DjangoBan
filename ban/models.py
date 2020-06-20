@@ -6,7 +6,7 @@ class UsersBan(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL,
                              verbose_name="User name",
                              help_text="Choose Username"
-                             on_delete=models.SET_NULL)
+                             on_delete=models.CASCADE)
 
     ban = models.BooleanField(default=False,
                               verbose_name="Ban",
